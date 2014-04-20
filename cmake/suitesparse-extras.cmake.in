@@ -3,5 +3,5 @@ list(APPEND @PROJECT_NAME@_INCLUDE_DIRS ${@PROJECT_NAME@_DIR}/../../../@CATKIN_G
 if(APPLE)
   list(APPEND @PROJECT_NAME@_LIBRARIES spqr cholmod ccolamd camd colamd amd lapack blas suitesparseconfig )
 else()
-  list(APPEND @PROJECT_NAME@_LIBRARIES spqr cholmod ccolamd camd colamd amd lapack blas )
+  list(APPEND @PROJECT_NAME@_LIBRARIES spqr cholmod ccolamd camd colamd amd lapack blas rt )
 endif()
