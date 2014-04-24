@@ -15,7 +15,7 @@ catkin_package(
     DEPENDS
     CATKIN_DEPENDS
     INCLUDE_DIRS include
-    LIBRARIES suitesparse_export_hack lapack blas rt amd
+    LIBRARIES suitesparse_export_hack
     # This exports the include/suitesparse directory to
     # other packages that depend on this package
     # http://answers.ros.org/question/93266/how-to-export-non-standard-include-directories-in-catkin/
