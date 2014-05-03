@@ -1,3 +1,7 @@
 list(APPEND @PROJECT_NAME@_INCLUDE_DIRS ${@PROJECT_NAME@_DIR}/../../../@CATKIN_GLOBAL_INCLUDE_DESTINATION@/suitesparse)
 
-list(APPEND @PROJECT_NAME@_LIBRARIES amd lapack blas rt)
+if(APPLE)
+  list(APPEND @PROJECT_NAME@_LIBRARIES amd lapack blas)
+else()
+  list(APPEND @PROJECT_NAME@_LIBRARIES amd lapack blas rt)
+endif()
