@@ -12,7 +12,7 @@ set(VERSION 4.2.1)
 catkin_package(
     DEPENDS
     CATKIN_DEPENDS
-    INCLUDE_DIRS include
+    INCLUDE_DIRS include ${CATKIN_DEVEL_PREFIX}/${CATKIN_GLOBAL_INCLUDE_DESTINATION}/suitesparse
     LIBRARIES ${PROJECT_NAME}
     CFG_EXTRAS suitesparse-extras.cmake
 )
