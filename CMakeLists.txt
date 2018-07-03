@@ -54,6 +54,4 @@ cs_export(INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include
                     ldl
                     rbio
                     spqr
-                    suitesparse
-                    suitespareconfig
                     umfpack)
