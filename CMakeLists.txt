@@ -24,7 +24,8 @@ ExternalProject_Add(suitesparse_src
 
 install(DIRECTORY ${CATKIN_DEVEL_PREFIX}/include/suitesparse
         DESTINATION ${CATKIN_GLOBAL_INCLUDE_DESTINATION}
-        FILES_MATCHING PATTERN "*.h")
+        FILES_MATCHING PATTERN "*.h"
+                       PATTERN "*.hpp")
 install(DIRECTORY ${CATKIN_DEVEL_PREFIX}/lib/
         DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
         FILES_MATCHING PATTERN "libamd*"
