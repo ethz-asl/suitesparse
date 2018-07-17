@@ -11,6 +11,7 @@
   <author>Dr. Tim Davis</author>
 
   <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>catkin_simple</buildtool_depend>
   <build_depend>libblas-dev</build_depend>
   <build_depend>liblapack-dev</build_depend>
 </package>
