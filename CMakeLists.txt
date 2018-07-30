@@ -45,17 +45,17 @@ install(DIRECTORY ${CATKIN_DEVEL_PREFIX}/lib/
 )
 cs_export(INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include/suitesparse
           LIBRARIES
+                    spqr
                     cholmod
+                    ccolamd
                     amd
                     btf
                     camd
                     colamd
-                    ccolamd
                     cxsparse
                     klu
                     ldl
                     rbio
-                    spqr
                     suitesparseconfig
                     umfpack
                     lapack
