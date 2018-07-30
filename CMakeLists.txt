@@ -44,15 +44,20 @@ install(DIRECTORY ${CATKIN_DEVEL_PREFIX}/lib/
                        PATTERN "libumfpack*"
 )
 cs_export(INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include/suitesparse
-          LIBRARIES amd
+          LIBRARIES
+                    cholmod
+                    amd
                     btf
                     camd
                     colamd
                     ccolamd
-                    cholmod
                     cxsparse
                     klu
                     ldl
                     rbio
                     spqr
-                    umfpack)
+                    suitesparseconfig
+                    umfpack
+                    lapack
+                    blas
+         )
