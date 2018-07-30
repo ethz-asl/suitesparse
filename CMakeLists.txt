@@ -43,7 +43,7 @@ install(DIRECTORY ${CATKIN_DEVEL_PREFIX}/lib/
                        PATTERN "libsuitesparseconfig*"
                        PATTERN "libumfpack*"
 )
-cs_export(INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include
+cs_export(INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include/suitesparse
           LIBRARIES amd
                     btf
                     camd
