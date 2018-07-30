@@ -47,12 +47,16 @@ cs_export(INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include/suitesparse
           LIBRARIES amd
                     btf
                     camd
-                    colamd
                     ccolamd
                     cholmod
+                    colamd
                     cxsparse
                     klu
                     ldl
                     rbio
                     spqr
-                    umfpack)
+                    suitesparseconfig
+                    umfpack
+                    lapack
+                    blas
+         )
