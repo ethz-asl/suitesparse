@@ -43,7 +43,7 @@ install(DIRECTORY ${CATKIN_DEVEL_PREFIX}/lib/
                        PATTERN "libsuitesparseconfig*"
                        PATTERN "libumfpack*"
 )
-cs_export(INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include/suitesparse
+cs_export(INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include/suitesparse ${CMAKE_INSTALL_PREFIX}/${CATKIN_GLOBAL_INCLUDE_DESTINATION}/suitesparse
           LIBRARIES
                     spqr
                     cholmod
