@@ -5,8 +5,11 @@ find_package(catkin_simple REQUIRED)
 
 find_package(catkin REQUIRED)
 
-catkin_package(CFG_EXTRAS asl_cmake_modules-extras.cmake)
+cs_export(CFG_EXTRAS suitesparse-extras.cmake)
 
 ## Install all cmake files
 install(DIRECTORY cmake/Modules
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/cmake) 
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/cmake)
+
+cs_export(INCLUDE_DIRS ${SUITESPARSE_INCLUDE_DIRS}
+          CFG_EXTRAS suitesparse-extras.cmake)
