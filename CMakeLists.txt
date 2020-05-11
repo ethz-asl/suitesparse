@@ -9,10 +9,8 @@ catkin_simple()
 include(ExternalProject)
 
 set(SUITESPARSE_INCLUDE_DEST ${CATKIN_DEVEL_PREFIX}/include/suitesparse)
-set(SUITESPARSE_GLOBAL_INSTALL_DEST ${CMAKE_INSTALL_PREFIX}/${CATKIN_GLOBAL_INCLUDE_DESTINATION}/suitesparse)
 
 file(MAKE_DIRECTORY ${SUITESPARSE_INCLUDE_DEST})
-file(MAKE_DIRECTORY ${SUITESPARSE_GLOBAL_INSTALL_DEST})
 
 set(VERSION 4.2.1)
 
@@ -45,7 +43,7 @@ install(DIRECTORY ${CATKIN_DEVEL_PREFIX}/lib/
                        PATTERN "libsuitesparseconfig*"
                        PATTERN "libumfpack*"
 )
-cs_export(INCLUDE_DIRS ${SUITESPARSE_INCLUDE_DEST} ${SUITESPARSE_GLOBAL_INSTALL_DEST}
+cs_export(INCLUDE_DIRS ${CATKIN_DEVEL_PREFIX}/include/suitesparse
           LIBRARIES
                     spqr
                     cholmod
