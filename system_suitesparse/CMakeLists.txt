@@ -7,8 +7,9 @@ list(APPEND CMAKE_MODULE_PATH "${system_suitesparse_SOURCE_DIR}/cmake")
 
 find_package(SUITESPARSE REQUIRED)
 
-install(DIRECTORY ${SUITESPARSE_INCLUDE_DIRS}
-        DESTINATION ${CATKIN_GLOBAL_INCLUDE_DESTINATION})
+if(NOT SUITESPARSE_FOUND)
+  message(FATAL Unable to find suitesparse! Is it not installed on the system?)
+endif()
 
 catkin_package(INCLUDE_DIRS ${SUITESPARSE_INCLUDE_DIRS}
           LIBRARIES ${SUITESPARSE_LIBRARIES})

@@ -1,10 +1,12 @@
 <?xml version="1.0"?>
 <package>
   <name>system_suitesparse</name>
-  <version>0.0.1</version> 
+  <version>4.2.1</version> 
   <description>CMake scripts finding system suitesparse library</description>
-  <maintainer email="developers@sevensense.ch">Sevensense developers</maintainer>
-  <license>closed</license>
+  <maintainer email="hannes.sommer@mavt.ethz.ch">Hannes Sommer</maintainer>
+  <license>LGPLv3 or later</license>
+
+  <author>Dr. Tim Davis</author>
   
   <buildtool_depend>catkin</buildtool_depend>
 
