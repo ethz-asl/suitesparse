@@ -5,8 +5,6 @@
   <description>CMake scripts finding system suitesparse library</description>
   <maintainer email="hannes.sommer@mavt.ethz.ch">Hannes Sommer</maintainer>
   <license>LGPLv3 or later</license>
-
-  <author>Dr. Tim Davis</author>
   
   <buildtool_depend>catkin</buildtool_depend>
 
