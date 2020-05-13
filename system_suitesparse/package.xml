@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package>
+<package format="2">
   <name>system_suitesparse</name>
   <version>4.2.1</version> 
   <description>CMake scripts finding system suitesparse library</description>
@@ -8,4 +8,5 @@
   
   <buildtool_depend>catkin</buildtool_depend>
 
+  <depend>libsuitesparse-dev</depend>
 </package>
