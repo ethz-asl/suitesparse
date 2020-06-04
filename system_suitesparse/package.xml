@@ -9,4 +9,5 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <depend>libsuitesparse-dev</depend>
+  <depend>metis_catkin</depend>
 </package>
